@@ -1,0 +1,37 @@
+.social {
+	line-height: 0;
+
+	@media (min-width: 768px) {
+		float: right;
+	}
+
+	li {
+		margin-right: 30px;
+
+		@media (min-width: 768px) {
+			margin-left: 30px;
+			margin-right: 0;
+		}
+	}
+
+	a {
+		background: url('../img/social-icons.png') no-repeat;
+		background-size: 187px 28px;
+		display: block;
+		height: 28px;
+		text-decoration: underline;
+		width: 28px;
+
+		&.twitter {
+			background-position: -53px 0;
+		}
+
+		&.youtube {
+			background-position: -106px 0;
+		}
+
+		&.linkedin {
+			background-position: -159px 0;
+		}
+	}
+}

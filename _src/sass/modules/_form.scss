@@ -1,0 +1,145 @@
+.form {
+	font-size: 18px;
+	border-bottom: 1px dotted #000;
+	margin-bottom: 35px;
+
+	&-content {
+
+		@media (min-width: 1167px) {
+			float: left;
+			width: 580px;
+		}
+	}
+
+	div {
+		margin-bottom: 20px;
+
+		&.form-submit {
+			margin-bottom: 35px;
+		}
+
+		&.form-input {
+			@media (min-width: 640px) {
+				float: left;
+				width: 48%;
+
+				&:nth-child(even) {
+					margin-right: 4%;
+				}
+			}
+		}
+
+		&.form-privacy {
+			margin-bottom: 60px;
+		}
+	}
+
+	input:focus,
+	select:focus {
+		border: 1px solid $green;
+		outline: none;
+	}
+
+	&-checkbox {
+		width: 18px;
+	}
+
+	input[type=checkbox]:not(old) {
+		margin: 0;
+		opacity: 0;
+		padding: 0;
+		position: absolute;
+		width: 18px;
+
+		+ label {
+			background: url('../img/checks.png') no-repeat 0 3px;
+			background-size: 18px 39px;
+			display: inline-block;
+			height: 21px;
+		}
+	}
+
+	input[type=checkbox]:not(old):checked + label {
+	  background-position: 0 -18px;
+	}
+
+	&-label {
+		padding-left: 25px;
+
+		&.privacy {
+			font-size: 14px;
+		}
+	}
+
+	&-text,
+	&-select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background-color: #fff;
+		border: 1px solid #e5e5e6;
+		border-radius: 0;
+		box-shadow: 0 1px 2px #e5e5e6;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 10px;
+		width: 100%;
+
+		&::placeholder {
+			color: #b2b8bd;
+		}
+
+		&.focused:invalid {
+			border: 1px solid #d8272e;
+		}
+	}
+
+	&-select {
+		background: #fff url('../img/drop-tri.png') no-repeat 95% center;
+		background-size: 14px 8px;
+	}
+
+	button[type=submit] {
+		border: 0;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1;
+		padding: 17px 70px 15px 30px;
+		text-align: left;
+
+		&:disabled {
+			opacity: .35;
+		} 
+
+		&.form-submit-orange {
+			background: #fa8d29 url('../img/right-white-arrow.png') no-repeat right 15px center;
+			background-size: 15px 14px;
+			color: #fff;
+
+			&:enabled:hover {
+				background-color: #f97620;
+			}
+		}
+	}
+
+	&-submit-clear {
+		background: url('../img/right-green-arrow.png') no-repeat right 15px center;
+		background-size: 15px 14px;
+		border: 1px solid $green;
+		display: inline-block;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1;
+		padding: 17px 70px 15px 30px;
+		text-decoration: none;
+
+		.l-form & {
+			color: #a3aaaf;
+		}
+
+		&:hover {
+			background-image: url('../img/right-blue-arrow.png');
+			border: 1px solid $blue;
+		}
+	}
+}

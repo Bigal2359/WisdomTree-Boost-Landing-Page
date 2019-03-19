@@ -1,0 +1,103 @@
+.l-bkgd {
+	background: url('../img/hero-bkgd.jpg');
+	background-size: cover;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.l-main {
+	position: relative;
+}
+
+.l-content {
+	margin: 0 auto;
+
+	@media (min-width: 570px) {
+		max-width: 570px;
+	}
+
+	@media (min-width: 960px) {
+		max-width: 840px;
+	}
+
+	@media (min-width: 1160px) {
+		max-width: 1160px;
+	}
+}
+
+.l-header {
+	background: rgba(0, 71, 186, 0.9);
+	padding: 20px 20px 50px;
+	position: relative;
+
+	@include media-query(desktop) {
+		padding-bottom: 120px;
+	}
+
+	p {
+		margin-bottom: 50px;
+		max-width: 1020px;
+
+		@include media-query(desktop) {
+			font-size: 24px;
+		}
+	}
+}
+
+.l-form {
+	background: #f4f5f6;
+	color: #687279;
+	padding: 80px 20px;
+	position: relative;
+
+	h2 {
+		border-top: 10px solid $blue;
+		color: #a3aaaf;
+		font-size: 25px;
+		line-height: 1;
+		padding-top: 15px;
+
+		@media (min-width: 1167px) {
+			float: left;
+			font-size: 40px;
+			margin-right: 50px;
+			text-align: right;
+			width: 450px;
+		}
+
+		img {
+			width: 73px;
+
+			@media (min-width: 1167px) {
+				width: 117px;
+			}
+		}
+	}
+}
+
+.l-legal {
+	background: #69737b;
+	color: #fff;
+	font-size: 14px;
+	padding: 80px 20px;
+	position: relative;
+}
+
+.l-footer {
+	padding: 30px 20px;
+	position: relative;
+
+	.contact {
+		margin-bottom: 25px;
+
+		@media (min-width: 768px) {
+			float: left;
+			margin-bottom: 0;
+		}
+	}
+}

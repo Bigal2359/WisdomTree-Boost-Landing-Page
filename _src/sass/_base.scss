@@ -1,0 +1,111 @@
+// ==========================================================================
+// JB reset and custom Normalize (3.0.3: Chrome, FF, Safari 6+, IE 8+)
+// ==========================================================================
+
+@import 'vendor/reset-jb-normalize-0.1.0';
+
+
+body {
+  background: #0047ba;
+  color: #fff;
+  font-family: Avenir, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: $font-black;
+	line-height: 1;
+
+	@include media-query(desktop) {
+		font-size: 56px;
+	}
+
+	img {
+		display: inline-block;
+		width: 95px;
+
+		@include media-query(desktop) {
+			width: 170px;
+		}
+	}
+
+	span {
+		letter-spacing: -2px;
+
+		@include media-query(desktop) {
+			letter-spacing: -4px;
+		}
+	}
+}
+
+h2 {
+	font-weight: $font-black;
+	text-transform: uppercase;
+
+	.l-legal & {
+		border-bottom: 1px dotted #fff;
+		font-size: 14px;
+		padding-bottom: 5px;
+	}
+}
+
+h3 {
+	font-size: 22px;
+	font-weight: $font-black;
+	line-height: 1.2;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+
+	@media (min-width: 1167px) {
+		font-size: 30px;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		height: 6px;
+		margin-top: 10px;
+		width: 40px;
+
+		.box-white & {
+			background: $green;
+		}
+
+		.box-green & {
+			background: $blue;
+		}
+	}
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+}
+
+a {
+	text-decoration: underline;
+
+	.l-legal & {
+		color: #fff;
+	}
+
+	.l-form & {
+		color: #687279;
+	}
+
+	.l-footer & {
+		color: #fff;
+		font-size: 14px;
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,17 @@
+# ------------------------------------------------------------------------------
+# BASIC AUTHENTICATION
+
+AuthType Basic
+AuthName "Pantene Jayla staging site"
+AuthUserFile /var/www/vhosts/demosite.gnycloud.com/pantene/.htpasswd
+Require valid-user
+Order deny,allow
+Deny from all
+Allow from 208.196.60.50
+Satisfy any
+
+# ------------------------------------------------------------------------------
+# REDIRECTS
+
+Redirect 301 /fearless  http://demosite.gnycloud.com/patene/?cmp=BRD-RDRCT-FRLSTEST-MAIN1#fearless
+Redirect 301 /fearless/  http://demosite.gnycloud.com/patene/?cmp=BRD-RDRCT-FRLSTEST-MAIN1#fearless

@@ -1,0 +1,35 @@
+.cta {
+	cursor: pointer;
+	display: table;
+	height: 44px;
+
+	&:hover .cta-text {
+		background: #658d1b;
+		color: #fff;
+	}
+
+	&-icon {
+		background: #658d1b url('../img/cta-arrow.png') no-repeat center center;
+		background-size: 18px 19px;
+		display: table-cell;
+		width: 44px;
+	}
+
+	&-text {
+		background: #fff;
+		border-left: 2px solid #0047ba;
+		color: #a3aaaf;
+		display: table-cell;
+		font-size: 18px;
+		font-weight: 700;
+		padding: 8px 20px 6px;
+
+		span {
+			display: none;
+
+			@include media-query(tablet) {
+				display: inline;
+			}
+		}
+	}
+}

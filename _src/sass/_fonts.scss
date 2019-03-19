@@ -1,0 +1,34 @@
+@charset 'UTF-8';
+
+
+@font-face {
+	font-family: Avenir;
+	font-style: normal;
+	font-weight: 200;
+	src: url('../fonts/AvenirLTStd-Light/AvenirLTStd-Light.eot');
+	src: url('../fonts/AvenirLTStd-Light/AvenirLTStd-Light.woff2') format('woff2'), url('../fonts/AvenirLTStd-Light/AvenirLTStd-Light.woff') format('woff'), url('../fonts/AvenirLTStd-Light/AvenirLTStd-Light.ttf') format('truetype'), url('../fonts/AvenirLTStd-Light/AvenirLTStd-Light.svg#AvenirLTStd-Light') format('svg'), url('../fonts/AvenirLTStd-Light/AvenirLTStd-Light.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+	font-family: Avenir;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/AvenirLTStd-Medium/AvenirLTStd-Medium.eot');
+	src: url('../fonts/AvenirLTStd-Medium/AvenirLTStd-Medium.woff2') format('woff2'), url('../fonts/AvenirLTStd-Medium/AvenirLTStd-Medium.woff') format('woff'), url('../fonts/AvenirLTStd-Medium/AvenirLTStd-Medium.ttf') format('truetype'), url('../fonts/AvenirLTStd-Medium/AvenirLTStd-Medium.svg#AvenirLTStd-Medium') format('svg'), url('../fonts/AvenirLTStd-Medium/AvenirLTStd-Medium.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+	font-family: Avenir;
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/AvenirLTStd-Heavy/AvenirLTStd-Heavy.eot');
+	src: url('../fonts/AvenirLTStd-Heavy/AvenirLTStd-Heavy.woff2') format('woff2'), url('../fonts/AvenirLTStd-Heavy/AvenirLTStd-Heavy.woff') format('woff'), url('../fonts/AvenirLTStd-Heavy/AvenirLTStd-Heavy.ttf') format('truetype'), url('../fonts/AvenirLTStd-Heavy/AvenirLTStd-Heavy.svg#AvenirLTStd-Heavy') format('svg'), url('../fonts/AvenirLTStd-Heavy/AvenirLTStd-Heavy.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+	font-family: Avenir;
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/AvenirLTStd-Black/AvenirLTStd-Black.eot');
+	src: url('../fonts/AvenirLTStd-Black/AvenirLTStd-Black.woff2') format('woff2'), url('../fonts/AvenirLTStd-Black/AvenirLTStd-Black.woff') format('woff'), url('../fonts/AvenirLTStd-Black/AvenirLTStd-Black.ttf') format('truetype'), url('../fonts/AvenirLTStd-Black/AvenirLTStd-Black.svg#AvenirLTStd-Black') format('svg'), url('../fonts/AvenirLTStd-Black/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype');
+}

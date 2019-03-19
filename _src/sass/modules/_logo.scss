@@ -1,0 +1,22 @@
+.logo {
+	border-bottom: 1px dotted #fff;
+	line-height: 0;
+	margin-bottom: 40px;
+	padding-bottom: 15px;
+	text-align: right;
+
+	@include media-query(desktop) {
+		margin-bottom: 110px;
+		padding-bottom: 25px;
+	}
+
+	img {
+		display: inline-block;
+		position: relative;
+		width: 105px;
+
+		@include media-query(desktop) {
+			width: 168px;
+		}
+	}
+}
